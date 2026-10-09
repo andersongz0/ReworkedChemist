@@ -2,10 +2,10 @@
   "BaselineVersion": "0.2.43-items-selected-back-test",
   "BaselinePlayerApproved": true,
   "CandidatePlayerApproved": false,
-  "Version": "0.2.44-rc.2",
+  "Version": "0.2.44-rc.3",
   "UnchangedContentFiles": 112,
   "ExpansionOwner": "FFTModLoader/InternalMods/ContentExpansion",
-  "RuntimeSha256": "36EA4A035EE4781204A985E1225180171E9796358529BE9FF6D00DC00F6FB33D",
+  "RuntimeSha256": "9E79ADEE34CCF92DF8687C96D34A4880321315C94654EC4B668CFB3E26FB1088",
   "NativeBridgeSha256": "9F98DDD612718DA9B2EAB934E775E8D30DAFFD57A006C084D025876C234F7327",
   "StableSaveNamespace": "ExpandedSaves/ReworkedChemist"
 }

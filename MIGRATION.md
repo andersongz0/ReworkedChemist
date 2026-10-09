@@ -9,9 +9,11 @@ The installer checks its mod identity and moves only that verified legacy folder
 **FFTModLoader.Backup** location, preventing two active copies of the same mod.
 Do not delete backup folders just to change a displayed name.
 
-The historical ModId `ffttic.tests.reworkedchemist.venom`, managed assembly identity and save namespace
-are compatibility identifiers, not the public mod name. Changing them casually can break mod resolution
-or access to existing expanded saves. They are deliberately preserved.
+The current ModId is **`ffttic.jobs.reworkedchemist`** and the consumer assembly is
+**FFTModLoader.ReworkedChemist.dll**. FFTModLoader 0.11.7-rc.5 recognizes the former
+test ID in older packages and translates it in the generated runtime configuration.
+The mod installer backs up the old consumer assembly when updating an existing installation.
+The expanded save namespace stays unchanged; no inventory or learned abilities are reset.
 
 Back up native saves and **FFTModLoader.Runtime/ExpandedSaves/ReworkedChemist** together.
 ContentExpansion and its native bridge are installed by the complete FFTModLoader package;

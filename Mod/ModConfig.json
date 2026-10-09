@@ -1,10 +1,10 @@
 {
-  "ModId": "ffttic.tests.reworkedchemist.venom",
+  "ModId": "ffttic.jobs.reworkedchemist",
   "ModName": "Reworked Chemist",
   "ModAuthor": "ZeroDS",
-  "ModVersion": "0.2.44-rc.2",
+  "ModVersion": "0.2.44-rc.3",
   "ModDescription": "Reworked Chemist: Potion, Ether and Remedy selection menus; damage flasks, buff/debuff essences, native throws and interception, AI support and chapter-based shops.",
-  "ModDll": "FFTModLoader.ReworkedChemist.VenomTest.dll",
+  "ModDll": "FFTModLoader.ReworkedChemist.dll",
   "CanUnload": false,
   "HasExports": false,
   "IsLibrary": false,

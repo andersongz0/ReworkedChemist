@@ -2,7 +2,7 @@ using FFTModLoader.ContentExpansion.Api;
 using Reloaded.Mod.Interfaces;
 using Reloaded.Mod.Interfaces.Internal;
 
-namespace ReworkedChemist.VenomTest; // stable internal identity, not the public mod name
+namespace ReworkedChemist;
 
 public sealed class Startup : IMod
 {

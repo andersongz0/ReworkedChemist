@@ -3,7 +3,9 @@
     <TargetFramework>net8.0-windows7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks><TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <AssemblyName>FFTModLoader.ReworkedChemist.VenomTest</AssemblyName>
+    <AssemblyName>FFTModLoader.ReworkedChemist</AssemblyName>
+    <DebugType Condition="'$(Configuration)' == 'Release'">none</DebugType>
+    <PathMap>$(MSBuildProjectDirectory)=/_/ReworkedChemist</PathMap>
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
     <FFTModLoaderSourceDirectory Condition="'$(FFTModLoaderSourceDirectory)' == ''">$(MSBuildThisFileDirectory)../../FFTModLoader_Prototype_v0.10.30</FFTModLoaderSourceDirectory>
   </PropertyGroup>

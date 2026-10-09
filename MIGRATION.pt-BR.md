@@ -9,9 +9,11 @@ O instalador confere a identidade do mod e move somente essa pasta antiga identi
 backup recuperável em **FFTModLoader.Backup**, evitando duas cópias ativas do mesmo mod.
 Não apague backups apenas para alterar um nome exibido.
 
-O ModId histórico `ffttic.tests.reworkedchemist.venom`, a identidade do assembly e o namespace dos saves
-são identificadores de compatibilidade, não o nome público do mod. Alterá-los sem uma migração completa
-pode quebrar a resolução do mod ou o acesso aos saves expandidos existentes. Eles são preservados intencionalmente.
+O ModId atual é **`ffttic.jobs.reworkedchemist`** e a DLL do mod é
+**FFTModLoader.ReworkedChemist.dll**. O FFTModLoader 0.11.7-rc.5 reconhece o antigo
+ID de teste nos pacotes anteriores e o traduz na configuração de execução gerada.
+O instalador preserva a DLL antiga em backup ao atualizar uma instalação existente.
+O namespace dos saves expandidos continua igual; estoque e habilidades aprendidas não são reiniciados.
 
 Faça backup dos saves nativos e de **FFTModLoader.Runtime/ExpandedSaves/ReworkedChemist** juntos.
 ContentExpansion e seu bridge nativo acompanham o pacote completo do FFTModLoader;
