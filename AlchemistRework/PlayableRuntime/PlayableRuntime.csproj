@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks><TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <AssemblyName>FFTModLoader.ReworkedChemist.VenomTest</AssemblyName>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Unique assembly identity avoids stale Core/Runtime DLL resolution from
+         the independent JP-only test; no installed loader assembly replaced. -->
+    <Compile Include="../../FFTModLoader_Prototype_v0.10.30/src/ContentExpansionCore/*.cs" Link="Core/%(Filename)%(Extension)" />
+    <Compile Include="../../FFTModLoader_Prototype_v0.10.30/src/ContentExpansionRuntime/*.cs" Link="Runtime/%(Filename)%(Extension)" />
+    <PackageReference Include="Reloaded.Mod.Interfaces" Version="2.4.0" ExcludeAssets="runtime" />
+    <PackageReference Include="Reloaded.SharedLib.Hooks" Version="1.9.0" />
+  </ItemGroup>
+</Project>

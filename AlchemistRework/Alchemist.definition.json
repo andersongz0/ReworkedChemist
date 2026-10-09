@@ -1,0 +1,62 @@
+{
+  "SchemaVersion": 1,
+  "ModId": "ffttic.jobs.alchemistrework",
+  "Stage": "DefinitionOnly",
+  "TargetJob": {
+    "NativeId": 75,
+    "NativeName": "Chemist",
+    "DisplayName": "Alchemist",
+    "CommandId": 6,
+    "ReplaceActions": true,
+    "PreserveReactionSupportMovement": true,
+    "PreserveCharacterSprites": true
+  },
+  "RequiredCapabilities": [
+    "ExpandedItemData",
+    "ExpandedAbilityData",
+    "ExpandedCommandIds",
+    "ExpandedItemIcons",
+    "ExpandedAbilityIcons",
+    "LegacyItemIconRouting",
+    "FormulaRegistry",
+    "ExpandedBattleItemList",
+    "InventoryPersistence",
+    "ShopIntegration",
+    "LearnedAbilityMigration"
+  ],
+  "Balance": {
+    "FixedElementalDamage": 5,
+    "TargetMaxHpPercent": 15,
+    "NewItemRange": 4,
+    "NewItemArea": "SingleTarget",
+    "Immediate": true,
+    "StatusSuccessPercent": 100,
+    "StatusUsesFaith": false,
+    "Availability": "Shops",
+    "ShopUnlockRule": "ByChapter",
+    "ShopUnlockChapters": {
+      "venom-flask": 1, "oil-flask": 1,
+      "fire-flask": 2, "ice-flask": 2, "thunder-flask": 2,
+      "essence-of-silence": 3, "essence-of-blindness": 3, "essence-of-slowness": 3,
+      "essence-of-acceleration": 4, "essence-of-regeneration": 4, "essence-of-flight": 4
+    },
+    "RespectStatusImmunities": true
+  },
+  "Actions": [
+    { "Key": "potion", "Name": "Potion", "JpCost": 50, "NativeItemId": 240, "NativeAbilityId": 368, "ConsumeCount": 1, "Effect": "Native" },
+    { "Key": "ether", "Name": "Ether", "JpCost": 150, "NativeItemId": 243, "NativeAbilityId": 371, "ConsumeCount": 1, "Effect": "Native" },
+    { "Key": "remedy", "Name": "Remedy", "JpCost": 300, "NativeItemId": 252, "NativeAbilityId": 380, "ConsumeCount": 1, "Effect": "Native" },
+    { "Key": "phoenix-down", "Name": "Phoenix Down", "JpCost": 90, "NativeItemId": 253, "NativeAbilityId": 381, "ConsumeCount": 1, "Effect": "Native" },
+    { "Key": "venom-flask", "Name": "Venom Flask", "JpCost": 70, "NewItem": true, "NewAbility": true, "ConsumeCount": 1, "Effect": "Status", "Status": "Poison", "PriceGil": 140, "IconKey": "alchemist.venom-flask" },
+    { "Key": "oil-flask", "Name": "Oil Flask", "JpCost": 150, "NewItem": true, "NewAbility": true, "ConsumeCount": 1, "Effect": "Status", "Status": "Oil", "PriceGil": 300, "IconKey": "alchemist.oil-flask" },
+    { "Key": "fire-flask", "Name": "Fire Flask", "JpCost": 250, "NewItem": true, "NewAbility": true, "ConsumeCount": 1, "Effect": "FixedElementalDamage", "Element": "Fire", "UsesFaith": false, "PriceGil": 500, "IconKey": "alchemist.fire-flask" },
+    { "Key": "ice-flask", "Name": "Ice Flask", "JpCost": 250, "NewItem": true, "NewAbility": true, "ConsumeCount": 1, "Effect": "FixedElementalDamage", "Element": "Ice", "UsesFaith": false, "PriceGil": 500, "IconKey": "alchemist.ice-flask" },
+    { "Key": "thunder-flask", "Name": "Thunder Flask", "JpCost": 250, "NewItem": true, "NewAbility": true, "ConsumeCount": 1, "Effect": "FixedElementalDamage", "Element": "Lightning", "UsesFaith": false, "PriceGil": 500, "IconKey": "alchemist.thunder-flask" },
+    { "Key": "essence-of-silence", "Name": "Essence of Silence", "JpCost": 700, "NewItem": true, "NewAbility": true, "ConsumeCount": 1, "Effect": "Status", "Status": "Silence", "PriceGil": 1400, "IconKey": "alchemist.essence-of-silence" },
+    { "Key": "essence-of-blindness", "Name": "Essence of Blindness", "JpCost": 700, "NewItem": true, "NewAbility": true, "ConsumeCount": 1, "Effect": "Status", "Status": "Blind", "PriceGil": 1400, "IconKey": "alchemist.essence-of-blindness" },
+    { "Key": "essence-of-slowness", "Name": "Essence of Slowness", "JpCost": 700, "NewItem": true, "NewAbility": true, "ConsumeCount": 1, "Effect": "Status", "Status": "Slow", "PriceGil": 1400, "IconKey": "alchemist.essence-of-slowness" },
+    { "Key": "essence-of-acceleration", "Name": "Essence of Acceleration", "JpCost": 1000, "NewItem": true, "NewAbility": true, "ConsumeCount": 1, "Effect": "Status", "Status": "Haste", "PriceGil": 2000, "IconKey": "alchemist.essence-of-acceleration" },
+    { "Key": "essence-of-regeneration", "Name": "Essence of Regeneration", "JpCost": 1000, "NewItem": true, "NewAbility": true, "ConsumeCount": 1, "Effect": "Status", "Status": "Regen", "PriceGil": 2000, "IconKey": "alchemist.essence-of-regeneration" },
+    { "Key": "essence-of-flight", "Name": "Essence of Flight", "JpCost": 1000, "NewItem": true, "NewAbility": true, "ConsumeCount": 1, "Effect": "Status", "Status": "Float", "PriceGil": 2000, "IconKey": "alchemist.essence-of-flight" }
+  ]
+}

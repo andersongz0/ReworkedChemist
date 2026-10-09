@@ -1,0 +1,4 @@
+<Project Sdk="Microsoft.NET.Sdk">
+ <PropertyGroup><TargetFramework>net9.0</TargetFramework><OutputType>Exe</OutputType><ImplicitUsings>enable</ImplicitUsings></PropertyGroup>
+ <ItemGroup><Reference Include="Iced" HintPath="C:/Program Files (x86)/Steam/steamapps/common/FINAL FANTASY TACTICS - The Ivalice Chronicles/FFTModLoader.Runtime/ResolvedMods/reloaded.sharedlib.hooks/x64/Iced.dll" /></ItemGroup>
+</Project>

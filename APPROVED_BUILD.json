@@ -1,0 +1,10 @@
+{
+  "Version": "0.2.43-items-selected-back-test",
+  "PlayerApproved": true,
+  "BaselineFiles": 116,
+  "ChangedFiles": [
+    "ModConfig.json"
+  ],
+  "RuntimeSha256": "9ADBA18BB2881E30C4027E6E3DB50B976E0AC009561DF496387A10373B1D1333",
+  "NativeBridgeSha256": "9F98DDD612718DA9B2EAB934E775E8D30DAFFD57A006C084D025876C234F7327"
+}
