@@ -3,6 +3,7 @@
     <TargetFramework>net9.0-windows</TargetFramework><OutputType>Exe</OutputType>
     <ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks><TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <FFTModLoaderSourceDirectory Condition="'$(FFTModLoaderSourceDirectory)' == ''">$(MSBuildThisFileDirectory)../../FFTModLoader_Prototype_v0.10.30</FFTModLoaderSourceDirectory>
     <HooksRuntimeDirectory>C:/Program Files (x86)/Steam/steamapps/common/FINAL FANTASY TACTICS - The Ivalice Chronicles/FFTModLoader.Runtime/ResolvedMods/reloaded.sharedlib.hooks/x64</HooksRuntimeDirectory>
   </PropertyGroup>
   <ItemGroup>
@@ -10,8 +11,7 @@
     <Reference Include="Reloaded.Hooks.Definitions" HintPath="$(HooksRuntimeDirectory)/Reloaded.Hooks.Definitions.dll" />
     <Reference Include="Reloaded.Hooks.ReloadedII.Interfaces" HintPath="$(HooksRuntimeDirectory)/Reloaded.Hooks.ReloadedII.Interfaces.dll" />
     <None Include="$(HooksRuntimeDirectory)/*.dll" CopyToOutputDirectory="PreserveNewest" Link="%(Filename)%(Extension)" />
-    <Compile Include="../../FFTModLoader_Prototype_v0.10.30/src/ContentExpansionCore/*.cs" Link="Core/%(Filename)%(Extension)" />
-    <Compile Include="../../FFTModLoader_Prototype_v0.10.30/src/ContentExpansionRuntime/*.cs" Link="Runtime/%(Filename)%(Extension)" />
-    <Compile Include="../../FFTModLoader_Prototype_v0.10.30/tests/NativeItemRouteTests/OwnedNativeMemory.cs" Link="OwnedNativeMemory.cs" />
+    <ProjectReference Include="$(FFTModLoaderSourceDirectory)/src/ContentExpansionModule/ContentExpansionModule.csproj" />
+    <Compile Include="$(FFTModLoaderSourceDirectory)/tests/NativeItemRouteTests/OwnedNativeMemory.cs" Link="OwnedNativeMemory.cs" />
   </ItemGroup>
 </Project>

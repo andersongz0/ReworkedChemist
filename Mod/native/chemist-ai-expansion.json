@@ -1,0 +1,652 @@
+{
+  "ExecutableSha256": "937233F7FE76182A665C487C8802F5CEC6662DDD09967E87CD09FB146FC6B5D5",
+  "SourceRva": 25634200,
+  "OriginalRows": 16,
+  "OriginalCapacity": 34,
+  "Capacity": 64,
+  "Operands": [
+    {
+      "InstructionRva": 3238766,
+      "ExpectedInstruction": "664289843998258701",
+      "DisplacementOffset": 5,
+      "FieldOffset": 0,
+      "Encoding": "ImageRelativeIndexed",
+      "Function": "SetupUnitAbilityFlags"
+    },
+    {
+      "InstructionRva": 3239006,
+      "ExpectedInstruction": "6641898C9798258701",
+      "DisplacementOffset": 5,
+      "FieldOffset": 0,
+      "Encoding": "ImageRelativeIndexed",
+      "Function": "SetupUnitAbilityFlags"
+    },
+    {
+      "InstructionRva": 3239357,
+      "ExpectedInstruction": "498D9798258701",
+      "DisplacementOffset": 3,
+      "FieldOffset": 0,
+      "Encoding": "ImageRelativeIndexed",
+      "Function": "SetUACommand"
+    },
+    {
+      "InstructionRva": 3239552,
+      "ExpectedInstruction": "6641899C8F98258701",
+      "DisplacementOffset": 5,
+      "FieldOffset": 0,
+      "Encoding": "ImageRelativeIndexed",
+      "Function": "SetUACommand"
+    },
+    {
+      "InstructionRva": 3239591,
+      "ExpectedInstruction": "6641899C8098258701",
+      "DisplacementOffset": 5,
+      "FieldOffset": 0,
+      "Encoding": "ImageRelativeIndexed",
+      "Function": "SetUACommand"
+    },
+    {
+      "InstructionRva": 3239981,
+      "ExpectedInstruction": "4C8DB198258701",
+      "DisplacementOffset": 3,
+      "FieldOffset": 0,
+      "Encoding": "ImageRelativeIndexed",
+      "Function": "SetUACommand"
+    },
+    {
+      "InstructionRva": 3725333,
+      "ExpectedInstruction": "498DBF98258701",
+      "DisplacementOffset": 3,
+      "FieldOffset": 0,
+      "Encoding": "ImageRelativeIndexed",
+      "Function": "DattoNoGotokuNigeyoRoutine"
+    },
+    {
+      "InstructionRva": 3721525,
+      "ExpectedInstruction": "488D055C5C4E01",
+      "DisplacementOffset": 3,
+      "FieldOffset": 0,
+      "Encoding": "RipRelative",
+      "Function": "EvaluateAllUnitAction"
+    },
+    {
+      "InstructionRva": 3718561,
+      "ExpectedInstruction": "488D05F0674E01",
+      "DisplacementOffset": 3,
+      "FieldOffset": 0,
+      "Encoding": "RipRelative",
+      "Function": "SetMoveAreaForDattoNoGotokuNigeyo"
+    },
+    {
+      "InstructionRva": 3718709,
+      "ExpectedInstruction": "488D055C674E01",
+      "DisplacementOffset": 3,
+      "FieldOffset": 0,
+      "Encoding": "RipRelative",
+      "Function": "SetMoveAreaForDattoNoGotokuNigeyo"
+    },
+    {
+      "InstructionRva": 3277020,
+      "ExpectedInstruction": "80BC999A258701FF",
+      "DisplacementOffset": 3,
+      "FieldOffset": 2,
+      "Encoding": "ImageRelativeIndexed",
+      "Function": "BattleRoutine_inner"
+    },
+    {
+      "InstructionRva": 3238757,
+      "ExpectedInstruction": "42C684399A25870101",
+      "DisplacementOffset": 4,
+      "FieldOffset": 2,
+      "Encoding": "ImageRelativeIndexed",
+      "Function": "SetupUnitAbilityFlags"
+    },
+    {
+      "InstructionRva": 3238988,
+      "ExpectedInstruction": "6641C784979A258701A984",
+      "DisplacementOffset": 5,
+      "FieldOffset": 2,
+      "Encoding": "ImageRelativeIndexed",
+      "Function": "SetupUnitAbilityFlags"
+    },
+    {
+      "InstructionRva": 3239544,
+      "ExpectedInstruction": "4188AC8F9A258701",
+      "DisplacementOffset": 4,
+      "FieldOffset": 2,
+      "Encoding": "ImageRelativeIndexed",
+      "Function": "SetUACommand"
+    },
+    {
+      "InstructionRva": 3239583,
+      "ExpectedInstruction": "4188B4809A258701",
+      "DisplacementOffset": 4,
+      "FieldOffset": 2,
+      "Encoding": "ImageRelativeIndexed",
+      "Function": "SetUACommand"
+    },
+    {
+      "InstructionRva": 3277061,
+      "ExpectedInstruction": "80BC989B25870100",
+      "DisplacementOffset": 3,
+      "FieldOffset": 3,
+      "Encoding": "ImageRelativeIndexed",
+      "Function": "BattleRoutine_inner"
+    },
+    {
+      "InstructionRva": 3277160,
+      "ExpectedInstruction": "80BC9D9B25870100",
+      "DisplacementOffset": 3,
+      "FieldOffset": 3,
+      "Encoding": "ImageRelativeIndexed",
+      "Function": "BattleRoutine_inner"
+    },
+    {
+      "InstructionRva": 3277371,
+      "ExpectedInstruction": "8A849D9B258701",
+      "DisplacementOffset": 3,
+      "FieldOffset": 3,
+      "Encoding": "ImageRelativeIndexed",
+      "Function": "BattleRoutine_inner"
+    },
+    {
+      "InstructionRva": 3277389,
+      "ExpectedInstruction": "88849D9B258701",
+      "DisplacementOffset": 3,
+      "FieldOffset": 3,
+      "Encoding": "ImageRelativeIndexed",
+      "Function": "BattleRoutine_inner"
+    },
+    {
+      "InstructionRva": 3277863,
+      "ExpectedInstruction": "88849D9B258701",
+      "DisplacementOffset": 3,
+      "FieldOffset": 3,
+      "Encoding": "ImageRelativeIndexed",
+      "Function": "BattleRoutine_inner"
+    },
+    {
+      "InstructionRva": 3277820,
+      "ExpectedInstruction": "80A49D9B258701FE",
+      "DisplacementOffset": 3,
+      "FieldOffset": 3,
+      "Encoding": "ImageRelativeIndexed",
+      "Function": "BattleRoutine_inner"
+    },
+    {
+      "InstructionRva": 3277844,
+      "ExpectedInstruction": "8A849D9B258701",
+      "DisplacementOffset": 3,
+      "FieldOffset": 3,
+      "Encoding": "ImageRelativeIndexed",
+      "Function": "BattleRoutine_inner"
+    },
+    {
+      "InstructionRva": 3277836,
+      "ExpectedInstruction": "44088C9D9B258701",
+      "DisplacementOffset": 4,
+      "FieldOffset": 3,
+      "Encoding": "ImageRelativeIndexed",
+      "Function": "BattleRoutine_inner"
+    },
+    {
+      "InstructionRva": 3718407,
+      "ExpectedInstruction": "488D058D684E01",
+      "DisplacementOffset": 3,
+      "FieldOffset": 3,
+      "Encoding": "RipRelative",
+      "Function": "SetMoveAreaForDattoNoGotokuNigeyo"
+    },
+    {
+      "InstructionRva": 3239020,
+      "ExpectedInstruction": "41C684979E258701FF",
+      "DisplacementOffset": 4,
+      "FieldOffset": 6,
+      "Encoding": "ImageRelativeIndexed",
+      "Function": "SetupUnitAbilityFlags"
+    },
+    {
+      "InstructionRva": 3239459,
+      "ExpectedInstruction": "488D0C8598258701",
+      "DisplacementOffset": 4,
+      "FieldOffset": 0,
+      "Encoding": "ImageRelativeIndexed",
+      "Function": "SetUACommand"
+    },
+    {
+      "InstructionRva": 3239698,
+      "ExpectedInstruction": "4C8D348598258701",
+      "DisplacementOffset": 4,
+      "FieldOffset": 0,
+      "Encoding": "ImageRelativeIndexed",
+      "Function": "SetUACommand"
+    },
+    {
+      "InstructionRva": 3276307,
+      "ExpectedInstruction": "4C8D348D98258701",
+      "DisplacementOffset": 4,
+      "FieldOffset": 0,
+      "Encoding": "ImageRelativeIndexed",
+      "Function": "BattleRoutine_inner"
+    },
+    {
+      "InstructionRva": 3277033,
+      "ExpectedInstruction": "488DAD98258701",
+      "DisplacementOffset": 3,
+      "FieldOffset": 0,
+      "Encoding": "ImageRelativeIndexed",
+      "Function": "BattleRoutine_inner"
+    },
+    {
+      "InstructionRva": 3723998,
+      "ExpectedInstruction": "488D0C8D98258701",
+      "DisplacementOffset": 4,
+      "FieldOffset": 0,
+      "Encoding": "ImageRelativeIndexed",
+      "Function": "RecoverCriticalStatus"
+    }
+  ],
+  "BiasedOperands": [
+    {
+      "InstructionRva": 3238008,
+      "ExpectedInstruction": "4180BCAAFA0E0000FF",
+      "DisplacementOffset": 4,
+      "FieldOffset": 2,
+      "SourceBaseRva": 25630368,
+      "Function": "SetUnitParameter"
+    },
+    {
+      "InstructionRva": 3238023,
+      "ExpectedInstruction": "498D8AF80E0000",
+      "DisplacementOffset": 3,
+      "FieldOffset": 0,
+      "SourceBaseRva": 25630368,
+      "Function": "SetUnitParameter"
+    },
+    {
+      "InstructionRva": 3238049,
+      "ExpectedInstruction": "41F684A8FB0E000008",
+      "DisplacementOffset": 4,
+      "FieldOffset": 3,
+      "SourceBaseRva": 25630368,
+      "Function": "SetUnitParameter"
+    },
+    {
+      "InstructionRva": 3238133,
+      "ExpectedInstruction": "418A84A8FB0E0000",
+      "DisplacementOffset": 4,
+      "FieldOffset": 3,
+      "SourceBaseRva": 25630368,
+      "Function": "SetUnitParameter"
+    },
+    {
+      "InstructionRva": 3238143,
+      "ExpectedInstruction": "418884A8FB0E0000",
+      "DisplacementOffset": 4,
+      "FieldOffset": 3,
+      "SourceBaseRva": 25630368,
+      "Function": "SetUnitParameter"
+    },
+    {
+      "InstructionRva": 3238173,
+      "ExpectedInstruction": "418884A8FB0E0000",
+      "DisplacementOffset": 4,
+      "FieldOffset": 3,
+      "SourceBaseRva": 25630368,
+      "Function": "SetUnitParameter"
+    },
+    {
+      "InstructionRva": 3238275,
+      "ExpectedInstruction": "41808CAAFB0E000004",
+      "DisplacementOffset": 4,
+      "FieldOffset": 3,
+      "SourceBaseRva": 25630368,
+      "Function": "SetUnitParameter"
+    },
+    {
+      "InstructionRva": 3238314,
+      "ExpectedInstruction": "41808CAAFB0E000002",
+      "DisplacementOffset": 4,
+      "FieldOffset": 3,
+      "SourceBaseRva": 25630368,
+      "Function": "SetUnitParameter"
+    },
+    {
+      "InstructionRva": 3238354,
+      "ExpectedInstruction": "41808CA8FB0E000002",
+      "DisplacementOffset": 4,
+      "FieldOffset": 3,
+      "SourceBaseRva": 25630368,
+      "Function": "SetUnitParameter"
+    }
+  ],
+  "Bounds": [
+    {
+      "InstructionRva": 3239374,
+      "Before": "496BC622",
+      "After": "496BC640",
+      "Function": "SetUACommand",
+      "Instruction": "imul rax, r14, 0x22"
+    },
+    {
+      "InstructionRva": 3239452,
+      "Before": "496BC622",
+      "After": "496BC640",
+      "Function": "SetUACommand",
+      "Instruction": "imul rax, r14, 0x22"
+    },
+    {
+      "InstructionRva": 3239528,
+      "Before": "496BCE22",
+      "After": "496BCE40",
+      "Function": "SetUACommand",
+      "Instruction": "imul rcx, r14, 0x22"
+    },
+    {
+      "InstructionRva": 3239572,
+      "Before": "486BC022",
+      "After": "486BC040",
+      "Function": "SetUACommand",
+      "Instruction": "imul rax, rax, 0x22"
+    },
+    {
+      "InstructionRva": 3239686,
+      "Before": "486BC022",
+      "After": "486BC040",
+      "Function": "SetUACommand",
+      "Instruction": "imul rax, rax, 0x22"
+    },
+    {
+      "InstructionRva": 3237998,
+      "Before": "486BE822",
+      "After": "486BE840",
+      "Function": "SetUnitParameter",
+      "Instruction": "imul rbp, rax, 0x22"
+    },
+    {
+      "InstructionRva": 3238191,
+      "Before": "4183FC22",
+      "After": "4183FC40",
+      "Function": "SetUnitParameter",
+      "Instruction": "cmp r12d, 0x22"
+    },
+    {
+      "InstructionRva": 3276300,
+      "Before": "486BC822",
+      "After": "486BC840",
+      "Function": "BattleRoutine_inner",
+      "Instruction": "imul rcx, rax, 0x22"
+    },
+    {
+      "InstructionRva": 3276825,
+      "Before": "4983F822",
+      "After": "4983F840",
+      "Function": "BattleRoutine_inner",
+      "Instruction": "cmp r8, 0x22"
+    },
+    {
+      "InstructionRva": 3277006,
+      "Before": "486BD922",
+      "After": "486BD940",
+      "Function": "BattleRoutine_inner",
+      "Instruction": "imul rbx, rcx, 0x22"
+    },
+    {
+      "InstructionRva": 3277882,
+      "Before": "4983FF22",
+      "After": "4983FF40",
+      "Function": "BattleRoutine_inner",
+      "Instruction": "cmp r15, 0x22"
+    },
+    {
+      "InstructionRva": 3721504,
+      "Before": "3C22",
+      "After": "3C40",
+      "Function": "EvaluateAllUnitAction",
+      "Instruction": "cmp al, 0x22"
+    },
+    {
+      "InstructionRva": 3721515,
+      "Before": "486BC822",
+      "After": "486BC840",
+      "Function": "EvaluateAllUnitAction",
+      "Instruction": "imul rcx, rax, 0x22"
+    },
+    {
+      "InstructionRva": 3238732,
+      "Before": "4969CE88000000",
+      "After": "4969CE00010000",
+      "Function": "SetupUnitAbilityFlags",
+      "Instruction": "imul rcx, r14, 0x88"
+    },
+    {
+      "InstructionRva": 3238961,
+      "Before": "496BD622",
+      "After": "496BD640",
+      "Function": "SetupUnitAbilityFlags",
+      "Instruction": "imul rdx, r14, 0x22"
+    },
+    {
+      "InstructionRva": 3239015,
+      "Before": "83F822",
+      "After": "83F840",
+      "Function": "SetupUnitAbilityFlags",
+      "Instruction": "cmp eax, 0x22"
+    },
+    {
+      "InstructionRva": 3725340,
+      "Before": "486BC822",
+      "After": "486BC840",
+      "Function": "DattoNoGotokuNigeyoRoutine",
+      "Instruction": "imul rcx, rax, 0x22"
+    },
+    {
+      "InstructionRva": 3725387,
+      "Before": "4883FE22",
+      "After": "4883FE40",
+      "Function": "DattoNoGotokuNigeyoRoutine",
+      "Instruction": "cmp rsi, 0x22"
+    },
+    {
+      "InstructionRva": 3718414,
+      "Before": "4969D188000000",
+      "After": "4969D100010000",
+      "Function": "SetMoveAreaForDattoNoGotokuNigeyo",
+      "Instruction": "imul rdx, r9, 0x88"
+    },
+    {
+      "InstructionRva": 3718454,
+      "Before": "4983F822",
+      "After": "4983F840",
+      "Function": "SetMoveAreaForDattoNoGotokuNigeyo",
+      "Instruction": "cmp r8, 0x22"
+    },
+    {
+      "InstructionRva": 3718554,
+      "Before": "4869C888000000",
+      "After": "4869C800010000",
+      "Function": "SetMoveAreaForDattoNoGotokuNigeyo",
+      "Instruction": "imul rcx, rax, 0x88"
+    },
+    {
+      "InstructionRva": 3718593,
+      "Before": "4983F822",
+      "After": "4983F840",
+      "Function": "SetMoveAreaForDattoNoGotokuNigeyo",
+      "Instruction": "cmp r8, 0x22"
+    },
+    {
+      "InstructionRva": 3718702,
+      "Before": "4869D088000000",
+      "After": "4869D000010000",
+      "Function": "SetMoveAreaForDattoNoGotokuNigeyo",
+      "Instruction": "imul rdx, rax, 0x88"
+    },
+    {
+      "InstructionRva": 3723973,
+      "Before": "3C22",
+      "After": "3C40",
+      "Function": "RecoverCriticalStatus",
+      "Instruction": "cmp al, 0x22"
+    },
+    {
+      "InstructionRva": 3723988,
+      "Before": "486BC822",
+      "After": "486BC840",
+      "Function": "RecoverCriticalStatus",
+      "Instruction": "imul rcx, rax, 0x22"
+    }
+  ],
+  "PropagatedReferences": {
+    "3239401": {
+      "Function": "SetUACommand",
+      "Instruction": "mov word ptr [rdx], ax"
+    },
+    "3239486": {
+      "Function": "SetUACommand",
+      "Instruction": "mov word ptr [rcx], ax"
+    },
+    "3239939": {
+      "Function": "SetUACommand",
+      "Instruction": "mov word ptr [r14], bp"
+    },
+    "3239998": {
+      "Function": "SetUACommand",
+      "Instruction": "mov word ptr [r14], bp"
+    },
+    "3240028": {
+      "Function": "SetUACommand",
+      "Instruction": "mov word ptr [r14], cx"
+    },
+    "3240103": {
+      "Function": "SetUACommand",
+      "Instruction": "mov word ptr [r14], bx"
+    },
+    "3238023": {
+      "Function": "SetUnitParameter",
+      "Instruction": "lea rcx, [r10 + 0xef8]"
+    },
+    "3276328": {
+      "Function": "BattleRoutine_inner",
+      "Instruction": "cmp byte ptr [r14 + 2], bl"
+    },
+    "3276503": {
+      "Function": "BattleRoutine_inner",
+      "Instruction": "movzx eax, byte ptr [r14 + 2]"
+    },
+    "3239392": {
+      "Function": "SetUACommand",
+      "Instruction": "mov byte ptr [rdx + 2], sil"
+    },
+    "3239477": {
+      "Function": "SetUACommand",
+      "Instruction": "mov byte ptr [rcx + 2], sil"
+    },
+    "3239935": {
+      "Function": "SetUACommand",
+      "Instruction": "mov byte ptr [r14 + 2], sil"
+    },
+    "3240107": {
+      "Function": "SetUACommand",
+      "Instruction": "mov byte ptr [r14 + 2], 0x12"
+    },
+    "3238008": {
+      "Function": "SetUnitParameter",
+      "Instruction": "cmp byte ptr [r10 + rbp*4 + 0xefa], 0xff"
+    },
+    "3724009": {
+      "Function": "RecoverCriticalStatus",
+      "Instruction": "cmp byte ptr [rcx + 2], 0xff"
+    },
+    "3725351": {
+      "Function": "DattoNoGotokuNigeyoRoutine",
+      "Instruction": "cmp byte ptr [rdi + 2], 0xff"
+    },
+    "3725365": {
+      "Function": "DattoNoGotokuNigeyoRoutine",
+      "Instruction": "movzx eax, byte ptr [rdi + 2]"
+    },
+    "3721536": {
+      "Function": "EvaluateAllUnitAction",
+      "Instruction": "cmp byte ptr [rcx + 2], 0xff"
+    },
+    "3718429": {
+      "Function": "SetMoveAreaForDattoNoGotokuNigeyo",
+      "Instruction": "cmp byte ptr [rdx - 1], 0xff"
+    },
+    "3276323": {
+      "Function": "BattleRoutine_inner",
+      "Instruction": "and byte ptr [r14 + 3], 0x7f"
+    },
+    "3277474": {
+      "Function": "BattleRoutine_inner",
+      "Instruction": "or byte ptr [r14 + 3], 0x80"
+    },
+    "3277479": {
+      "Function": "BattleRoutine_inner",
+      "Instruction": "test byte ptr [r14 + 3], 8"
+    },
+    "3239919": {
+      "Function": "SetUACommand",
+      "Instruction": "mov al, byte ptr [r14 + 3]"
+    },
+    "3239931": {
+      "Function": "SetUACommand",
+      "Instruction": "mov byte ptr [r14 + 3], al"
+    },
+    "3238049": {
+      "Function": "SetUnitParameter",
+      "Instruction": "test byte ptr [r8 + rbp*4 + 0xefb], 8"
+    },
+    "3238133": {
+      "Function": "SetUnitParameter",
+      "Instruction": "mov al, byte ptr [r8 + rbp*4 + 0xefb]"
+    },
+    "3238143": {
+      "Function": "SetUnitParameter",
+      "Instruction": "mov byte ptr [r8 + rbp*4 + 0xefb], al"
+    },
+    "3238173": {
+      "Function": "SetUnitParameter",
+      "Instruction": "mov byte ptr [r8 + rbp*4 + 0xefb], al"
+    },
+    "3238275": {
+      "Function": "SetUnitParameter",
+      "Instruction": "or byte ptr [r10 + rbp*4 + 0xefb], 4"
+    },
+    "3238314": {
+      "Function": "SetUnitParameter",
+      "Instruction": "or byte ptr [r10 + rbp*4 + 0xefb], 2"
+    },
+    "3238354": {
+      "Function": "SetUnitParameter",
+      "Instruction": "or byte ptr [r8 + rbp*4 + 0xefb], 2"
+    },
+    "3725380": {
+      "Function": "DattoNoGotokuNigeyoRoutine",
+      "Instruction": "and byte ptr [rdi + 3], 0x7f"
+    },
+    "3718435": {
+      "Function": "SetMoveAreaForDattoNoGotokuNigeyo",
+      "Instruction": "mov cl, byte ptr [rdx]"
+    },
+    "3718571": {
+      "Function": "SetMoveAreaForDattoNoGotokuNigeyo",
+      "Instruction": "cmp byte ptr [rcx + 3], 0"
+    },
+    "3718620": {
+      "Function": "SetMoveAreaForDattoNoGotokuNigeyo",
+      "Instruction": "and byte ptr [rdi + 3], 0x7f"
+    }
+  },
+  "Functions": [
+    "BattleRoutine_inner",
+    "DattoNoGotokuNigeyoRoutine",
+    "EvaluateAllUnitAction",
+    "RecoverCriticalStatus",
+    "SetMoveAreaForDattoNoGotokuNigeyo",
+    "SetUACommand",
+    "SetUnitParameter",
+    "SetupUnitAbilityFlags"
+  ]
+}

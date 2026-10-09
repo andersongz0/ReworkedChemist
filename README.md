@@ -1,36 +1,42 @@
 # Reworked Chemist
 
-Autor: **ZeroDS** · [Código-fonte e releases](https://github.com/andersongz0/ReworkedChemist)
+[English](README.md) | [Português](README.pt-BR.md)
 
-Versão **0.2.43-items-selected-back-test**, aprovada no teste final do jogador.
-Esta publicação altera apenas autoria, link e documentação: as DLLs, os dados
-e os recursos de gameplay do pacote final permanecem idênticos.
+Author: **ZeroDS** · [Source and releases](https://github.com/andersongz0/ReworkedChemist)
 
-- Potion: submenu com Potion, Hi-Potion, X-Potion e Elixir.
-- Ether: submenu com Ether e Hi-Ether.
-- Remedy: Antidote, Eye Drops, Echo Herbs, Maiden's Kiss, Gold Needle, Holy Water e Remedy.
-- Bloqueio por estoque, escolha de alvo, arremesso e interceptação nativos.
-- Novos frascos/essências, nomes e ícones próprios e integração com a IA.
-- Fire/Ice/Thunder Flask: **5 de dano fixo + 15% do HP máximo do alvo**.
-- Lojas: Poison/Oil no capítulo 1; Fire/Ice/Thunder no 2; essências de debuff no 3; de buff no 4.
+**0.2.44-rc.1** is the loader-infrastructure migration candidate.
+Gameplay implementation and content are preserved from the approved **0.2.43**;
+the DLL is rebuilt as a thin consumer, so this architecture update still needs an in-game test.
 
-## Dependências e instalação
+- Potion menu: Potion, Hi-Potion, X-Potion, Elixir.
+- Ether menu: Ether, Hi-Ether.
+- Remedy menu: Antidote, Eye Drops, Echo Herbs, Maiden's Kiss, Gold Needle, Holy Water, Remedy.
+- Stock gating, target selection, native throws and interception.
+- Eleven flasks/essences; native names/icons, AI integration and chapter-based shops.
+- Fire/Ice/Thunder: **5 fixed damage + 15% target maximum HP**, rounded up before elemental modifiers.
+- Shops: Poison/Oil chapter 1; elemental flasks chapter 2; debuff essences chapter 3; buff essences chapter 4.
 
-Instale primeiro [FFTModLoader 0.11.6](https://github.com/andersongz0/FFTModLoader/releases).
-Dependências diretas: **Utility Mod Loader** (`fftivc.utility.modloader`),
-**JobExpansion** (`fftmodloader.jobexpansion`) e **SharedLib.Hooks**
-(`reloaded.sharedlib.hooks`). SigScan e GenericJobs original também fazem parte
-da cadeia de dependências da configuração atual, já incluídos no FFTModLoader.
+## Installation and dependencies
 
-**Não depende de Generic Knights.** A IA inimiga usa a mesma integração da IA
-do jogador; o teste do jogador foi aprovado, mas não há afirmação de um teste
-separado de todos os comportamentos inimigos.
+Install [FFTModLoader 0.11.7-rc.1](https://github.com/andersongz0/FFTModLoader/releases) first.
+Extract **ReworkedChemist-0.2.44-rc.1.zip** outside the game directory, close game/loader and run
+`install.ps1 -GameDirectory "your game folder"`.
 
-Extraia `ReworkedChemist-0.2.43.zip` separadamente e, com jogo e loader fechados,
-execute `install.ps1 -GameDirectory "caminho da pasta do jogo"`. O nome da pasta
-`Reworked Chemist - Venom Test` e o ModId histórico são intencionais para manter
-a compatibilidade com a instalação e os saves existentes. Não os renomeie.
-O instalador faz backup do mod substituído e não modifica saves ou sidecars.
+The installed folder and displayed name are **Mods/Reworked Chemist** and **Reworked Chemist**.
+The installer moves the verified legacy `Reworked Chemist - Venom Test` folder into a recoverable backup.
+The historical ModId/assembly identity is retained for compatibility, not used as the public mod name.
+Do not keep two folders with the same ModId enabled.
 
-Veja [BUILD.md](BUILD.md), [APPROVED_BUILD.json](APPROVED_BUILD.json) e
-[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) no repositório.
+Requires loader-owned **ContentExpansion**, **JobExpansion**, Utility Mod Loader and SharedLib.Hooks.
+Their transitive compatibility dependencies are bundled with FFTModLoader.
+**Generic Knights is not required.**
+There is no standalone native bridge or expansion implementation in this mod package.
+
+Saves remain unchanged; extras stay in `FFTModLoader.Runtime/ExpandedSaves/ReworkedChemist`.
+Back up both native saves and this directory when migrating computers.
+Player AI was tested previously; a separate exhaustive enemy-AI test is not claimed.
+
+**Nenkai**: Utility Mod Loader, FF16Tools and FaithFramework.
+See [credits/tools](CREDITS.md), [building](BUILD.md), [migration record](APPROVED_BUILD.json)
+and [third-party notices](THIRD_PARTY_NOTICES.md).
+New mods will only be published once explicitly declared finalized by the user.

@@ -1,34 +1,24 @@
-# Compilação e testes
+# Building Reworked Chemist
 
-Windows x64, SDK .NET 9, Visual Studio 2022 com C++ e assembler x64, Python 3
-com Pillow. O projeto conserva os caminhos relativos entre `AlchemistRework`
-e `FFTModLoader_Prototype_v0.10.30` para manter os links de compilação originais.
+[English](BUILD.md) | [Português](BUILD.pt-BR.md)
 
-Compilação gerenciada:
+Windows x64 and .NET SDK supporting net8/net9. Clone **FFTModLoader** as well.
+Expansion infrastructure is built and distributed by the loader; it is no longer duplicated in this repository.
 
-```powershell
-dotnet build AlchemistRework/PlayableRuntime/PlayableRuntime.csproj -c Release
-dotnet run --project FFTModLoader_Prototype_v0.10.30/tests/ContentExpansionCoreTests -c Release -- AlchemistRework/Alchemist.definition.json
-```
+Build the thin consumer:
+`dotnet build AlchemistRework/PlayableRuntime/PlayableRuntime.csproj -c Release -p:FFTModLoaderSourceDirectory="path/to/FFTModLoader"`
 
-Bridge nativo:
+Run the host tests with the same property:
+`dotnet run --project AlchemistRework/PlayableHostTests -c Release -p:FFTModLoaderSourceDirectory="path/to/FFTModLoader" -- "path/to/local/FFT/workspace"`
+`HooksRuntimeDirectory` selects the local actual hook library directory.
+The host tests reference the **actual compiled loader module**, not another copy of its sources.
+Historical native fixtures require locally generated input assets from a legal game; they are not shipped.
+Use the loader's `tools/build_native_bridge.ps1` for bridge builds.
 
-```powershell
-./AlchemistRework/tools/build_native_bridge.ps1
-```
+Content generators are in `AlchemistRework/tools`; the skill definition is `AlchemistRework/Alchemist.definition.json`.
+Use Nenkai's FF16Tools and local legal game inputs. These historical generators can require additional local paths.
+No game executable, full extracted table database, private save or recording is distributed.
 
-Os testes de host usam as bibliotecas de hooks da instalação local. Informe o
-caminho com `-p:HooksRuntimeDirectory="caminho das bibliotecas de hooks"`.
-Testes de ABI, vídeo, saves e recursos nativos não são equivalentes a uma
-aprovação visual em jogo. Não são distribuídos saves, vídeos privados, dumps,
-executáveis do jogo ou bancos completos de tabelas extraídas.
-
-Os geradores de conteúdo e arte estão em `AlchemistRework/tools`. Sua
-reprodução exige as entradas originais da instalação legal do usuário e os
-conversores externos apropriados. A definição de habilidades/balanceamento
-fica em `AlchemistRework/Alchemist.definition.json`.
-
-Os dois binários da release foram preservados da versão final aprovada;
-`APPROVED_BUILD.json` registra seus hashes e a alteração exclusiva de metadados.
-Compilar novamente produz um novo binário de desenvolvimento, não uma
-certificação automática de que ele foi testado dentro do jogo.
+APPROVED_BUILD.json distinguishes the approved 0.2.43 content from the 0.2.44 architecture candidate.
+Native bridge bytes and gameplay resources are preserved; provider/consumer binaries are rebuilt.
+Owned-memory/ABI tests do not establish live scene rendering or in-game approval.

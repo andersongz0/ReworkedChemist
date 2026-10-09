@@ -1,0 +1,23 @@
+{
+  "ModId": "ffttic.tests.reworkedchemist.venom",
+  "ModName": "Reworked Chemist",
+  "ModAuthor": "ZeroDS",
+  "ModVersion": "0.2.44-rc.1",
+  "ModDescription": "Reworked Chemist: item family menus, flasks, essences, native interception, AI and chapter shops. Uses loader-owned ContentExpansion. Architecture migration candidate; approved gameplay data preserved.",
+  "ModDll": "FFTModLoader.ReworkedChemist.VenomTest.dll",
+  "CanUnload": false,
+  "HasExports": false,
+  "IsLibrary": false,
+  "IsUniversalMod": false,
+  "ModDependencies": [
+    "fftmodloader.contentexpansion",
+    "fftivc.utility.modloader",
+    "fftmodloader.jobexpansion",
+    "reloaded.sharedlib.hooks"
+  ],
+  "OptionalDependencies": [],
+  "SupportedAppId": [
+    "fft_enhanced.exe"
+  ],
+  "ProjectUrl": "https://github.com/andersongz0/ReworkedChemist"
+}
