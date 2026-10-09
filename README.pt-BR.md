@@ -4,9 +4,9 @@
 
 Autor: **ZeroDS** · [Código-fonte e releases](https://github.com/andersongz0/ReworkedChemist)
 
-**0.2.44-rc.1** é a candidata com a infraestrutura transferida para o loader.
-A implementação de gameplay e os recursos da versão aprovada **0.2.43** foram preservados.
-A DLL foi recompilada como consumidora da API; essa mudança de arquitetura ainda precisa do teste no jogo.
+Reworked Chemist amplia a classe **Chemist**, organizando os medicamentos em menus de escolha e adicionando frascos de dano e essências de buff/debuff. Inclui verificação de estoque, arremesso e interceptação nativos, suporte à IA e venda nas lojas conforme a história avança.
+
+## Funcionalidades
 
 - Menu Potion: Potion, Hi-Potion, X-Potion e Elixir.
 - Menu Ether: Ether e Hi-Ether.
@@ -18,33 +18,40 @@ A DLL foi recompilada como consumidora da API; essa mudança de arquitetura aind
 
 ## Requisitos
 
-- Windows x64 e instalação legítima da Steam de **FINAL FANTASY TACTICS - The Ivalice Chronicles**, modo Enhanced.
-- [FFTModLoader 0.11.7-rc.1](https://github.com/andersongz0/FFTModLoader/releases/tag/v0.11.7-rc.1), instalado com o pacote completo.
-- **ContentExpansion**, **JobExpansion**, Utility Mod Loader e SharedLib.Hooks, incluindo suas dependências de compatibilidade.
+- Windows x64 e instalação legítima de **FINAL FANTASY TACTICS - The Ivalice Chronicles** pela Steam, modo Enhanced.
+- [FFTModLoader 0.11.7-rc.2](https://github.com/andersongz0/FFTModLoader/releases/tag/v0.11.7-rc.2), instalado com o pacote completo.
 
-Todos os componentes necessários acompanham FFTModLoader; não é necessário baixar dependências separadamente.
+ContentExpansion, JobExpansion, Utility Mod Loader e suas dependências de compatibilidade acompanham o FFTModLoader.
 
 ## Guia de Instalação do Reworked Chemist
 
 1. Instale FFTModLoader seguindo [o guia dele](https://github.com/andersongz0/FFTModLoader/blob/main/README.pt-BR.md#guia-de-instalação-do-fftmodloader).
-2. Feche o jogo e o loader.
-3. Baixe **ReworkedChemist-0.2.44-rc.1.zip** em [Assets da release](https://github.com/andersongz0/ReworkedChemist/releases/tag/v0.2.44-rc.1), não **Source code**.
-4. Extraia fora da pasta do jogo. Abra o PowerShell na pasta extraída e execute `./install.ps1 -GameDirectory "pasta do jogo"`.
-5. Confira se **Mods/Reworked Chemist/ModConfig.json** existe na instalação do jogo. O nome exibido é **Reworked Chemist**.
-6. Abra **FFTModLoader.exe** no modo Enhanced. Aprenda as habilidades disponíveis do Chemist e obtenha seus itens; itens com estoque zerado não podem ser usados e as lojas seguem os capítulos listados acima.
+2. Feche o jogo. Feche também o loader, caso já esteja instalado e aberto.
+3. Baixe **ReworkedChemist-0.2.44-rc.2.zip** em [Assets da release](https://github.com/andersongz0/ReworkedChemist/releases/tag/v0.2.44-rc.2), não **Source code**.
+4. Extraia o ZIP em uma pasta separada, fora da instalação do jogo.
+5. Dê dois cliques em **Install.cmd** e escolha o idioma.
+6. Confira a pasta encontrada e digite **SIM** para confirmar. Se houver várias instalações, escolha uma; se nenhuma for encontrada, informe o caminho de **FFT_enhanced.exe** ou da pasta que o contém.
+7. Autorize a solicitação de permissão do Windows, se aparecer, e aguarde a mensagem de conclusão.
 
-O instalador confere hashes e guarda arquivos substituídos em **FFTModLoader.Backup**.
-Para atualizar, feche jogo/loader e instale a nova release completa. Mantenha apenas uma cópia ativa de Reworked Chemist.
-Se faltarem dependências, reinstale o pacote completo do FFTModLoader.
+Não é necessário digitar comandos. O instalador verifica o pacote e guarda arquivos substituídos em **FFTModLoader.Backup**, dentro da pasta do jogo. Saves e outros mods são preservados.
+O mod é instalado em **Mods/Reworked Chemist**.
 
-## Saves e instalações anteriores
+## Como usar
 
-Saves são preservados; extras continuam em `FFTModLoader.Runtime/ExpandedSaves/ReworkedChemist`.
-Ao trocar de computador, faça backup dos saves nativos e dessa pasta.
-A IA do jogador foi testada anteriormente; não afirmamos um teste separado exaustivo da IA inimiga.
-Consulte [as notas de migração](MIGRATION.pt-BR.md) para detalhes de instalações antigas.
+Abra **FFTModLoader.exe** na pasta do jogo. Aprenda as habilidades do Chemist e obtenha seus itens. Na batalha, escolha Potion, Ether ou Remedy, selecione um item em estoque e depois escolha o alvo. Os novos frascos e essências aparecem nas lojas conforme a história avança.
+
+## Saves
+
+Ao trocar de computador, faça backup dos saves nativos e de `FFTModLoader.Runtime/ExpandedSaves/ReworkedChemist`.
+
+[Detalhes de instalações anteriores](MIGRATION.pt-BR.md)
+
+## Atualização
+
+Feche o jogo e o loader, se estiver aberto, e execute **Install.cmd** da nova release completa. Se faltarem arquivos de dependências, reinstale o pacote completo do FFTModLoader.
+
+## Créditos
 
 **Nenkai**: Utility Mod Loader, FF16Tools e FaithFramework.
 Veja [créditos/ferramentas](CREDITS.pt-BR.md), [compilação](BUILD.pt-BR.md),
-[registro da migração](APPROVED_BUILD.json) e [avisos de terceiros](THIRD_PARTY_NOTICES.md).
-Novos mods só serão publicados quando explicitamente considerados finalizados pelo usuário.
+[avisos de terceiros](THIRD_PARTY_NOTICES.md).
