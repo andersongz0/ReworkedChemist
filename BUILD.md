@@ -20,5 +20,7 @@ Use Nenkai's FF16Tools and local legal game inputs. These historical generators 
 No game executable, full extracted table database, private save or recording is distributed.
 
 APPROVED_BUILD.json distinguishes the approved 0.2.43 content from the 0.2.44 architecture candidate.
-Native bridge bytes and gameplay resources are preserved; provider/consumer binaries are rebuilt.
+Native bridge bytes and gameplay fields are preserved. `build_menu_descriptions.py --mod Mod --output "new verification directory" --ff16tools "path/to/FF16Tools.CLI.exe"`
+updates only the three group-action Description fields in each game locale, verifies a complete NXD round trip and leaves individual item descriptions intact.
+MENU_DESCRIPTIONS.json records those seven verified resource changes.
 Owned-memory/ABI tests do not establish live scene rendering or in-game approval.

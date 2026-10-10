@@ -1,0 +1,104 @@
+{
+  "DescriptionOnly": true,
+  "NxdRoundTripVerified": true,
+  "Locales": {
+    "en": {
+      "BeforeSha256": "2FB2A240CA9D2F20A3AA5DF6FC9B0C4774C2D82EA9CD1395BB3B13C6395E90E8",
+      "AfterSha256": "616DA8A578DF31FD13602D389FD8A55208B9E9E70BC7A71F8042BD6B9382848E",
+      "ChangedKeys": [
+        368,
+        371,
+        380
+      ],
+      "ChangedColumns": [
+        "Description"
+      ],
+      "Rows": 523,
+      "OtherFieldsAndItemDescriptionsPreserved": true
+    },
+    "de": {
+      "BeforeSha256": "092BF8703BC3AF84BA8716D30F5C0AC9F9AFE6D0B8991BC3C391ED03E9B74592",
+      "AfterSha256": "354957E566914A3FB05E1B1DA88A370E9E9535202AE7BEDEE5CEFD12326051D5",
+      "ChangedKeys": [
+        368,
+        371,
+        380
+      ],
+      "ChangedColumns": [
+        "Description"
+      ],
+      "Rows": 523,
+      "OtherFieldsAndItemDescriptionsPreserved": true
+    },
+    "fr": {
+      "BeforeSha256": "95915A2896E6A19FF07C01A12EE223A2D79828DD264989ED79CC8CBC10B510A6",
+      "AfterSha256": "F54F3FC69F09139D5F0E5C65B1B00486E7CA83F1E0DA7D24FB1875BE3633D0EC",
+      "ChangedKeys": [
+        368,
+        371,
+        380
+      ],
+      "ChangedColumns": [
+        "Description"
+      ],
+      "Rows": 523,
+      "OtherFieldsAndItemDescriptionsPreserved": true
+    },
+    "ja": {
+      "BeforeSha256": "A70A9C478A80A24E12721AEFCE9C6517AEF7C052BD090B6E5000B6C244C18FAA",
+      "AfterSha256": "C32BD454A841A2C160B8E33F3F89B23B18D61BD42AEC0AAC0DDE02659A0F3EFD",
+      "ChangedKeys": [
+        368,
+        371,
+        380
+      ],
+      "ChangedColumns": [
+        "Description"
+      ],
+      "Rows": 523,
+      "OtherFieldsAndItemDescriptionsPreserved": true
+    },
+    "ko": {
+      "BeforeSha256": "4565EED3A0BADEDC1847F23B7EA391AD3D35447BA4A043FB21ED73DF5E2AEA27",
+      "AfterSha256": "A918F4E36A66D2D6B407B7C37F596E9D662C4CCAD9393D0ECE09D8DC48895A99",
+      "ChangedKeys": [
+        368,
+        371,
+        380
+      ],
+      "ChangedColumns": [
+        "Description"
+      ],
+      "Rows": 523,
+      "OtherFieldsAndItemDescriptionsPreserved": true
+    },
+    "cs": {
+      "BeforeSha256": "C7E1E43F4867E5E2A9A1036C1BA8292CAA99B5CB48525DB61BFC6C3E1792A38A",
+      "AfterSha256": "63ADACF90C6503F3BF0A7B7D98708C3D4CAA689BD09A0267E202EF8667900BA8",
+      "ChangedKeys": [
+        368,
+        371,
+        380
+      ],
+      "ChangedColumns": [
+        "Description"
+      ],
+      "Rows": 523,
+      "OtherFieldsAndItemDescriptionsPreserved": true
+    },
+    "ct": {
+      "BeforeSha256": "F79700AF12EFE99978AD6227F4957EE33C25AE17DA250D65484D8F5D59958C3E",
+      "AfterSha256": "9ED221B30B6AAEAA59DF8E21DF5922FC3BE3B578C47F2358778B2C36AE418648",
+      "ChangedKeys": [
+        368,
+        371,
+        380
+      ],
+      "ChangedColumns": [
+        "Description"
+      ],
+      "Rows": 523,
+      "OtherFieldsAndItemDescriptionsPreserved": true
+    }
+  }
+}

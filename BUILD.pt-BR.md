@@ -20,5 +20,7 @@ Use FF16Tools de Nenkai e recursos locais legítimos. Geradores históricos pode
 Não distribuímos executável do jogo, banco completo extraído, saves nem vídeos privados.
 
 APPROVED_BUILD.json distingue conteúdo aprovado 0.2.43 da candidata de arquitetura 0.2.44.
-Bridge nativo e recursos de gameplay foram preservados; binários provedor/consumidor recompilados.
+Bridge nativo e campos de gameplay são preservados. `build_menu_descriptions.py --mod Mod --output "nova pasta de verificação" --ff16tools "caminho/FF16Tools.CLI.exe"`
+altera somente três campos Description das ações de grupo em cada idioma do jogo e confere o round trip completo do NXD. Descrições dos itens individuais permanecem intactas.
+MENU_DESCRIPTIONS.json registra os sete recursos verificados.
 Testes isolados/ABI não comprovam renderização das cenas nem aprovação dentro do jogo.

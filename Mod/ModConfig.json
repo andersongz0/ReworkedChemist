@@ -2,7 +2,7 @@
   "ModId": "ffttic.jobs.reworkedchemist",
   "ModName": "Reworked Chemist",
   "ModAuthor": "ZeroDS",
-  "ModVersion": "0.2.44-rc.3",
+  "ModVersion": "0.2.44-rc.4",
   "ModDescription": "Reworked Chemist: Potion, Ether and Remedy selection menus; damage flasks, buff/debuff essences, native throws and interception, AI support and chapter-based shops.",
   "ModDll": "FFTModLoader.ReworkedChemist.dll",
   "CanUnload": false,
